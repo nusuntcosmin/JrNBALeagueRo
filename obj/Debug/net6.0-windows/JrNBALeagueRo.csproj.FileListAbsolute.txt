@@ -1,0 +1,17 @@
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\JrNBALeagueRo.exe
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\JrNBALeagueRo.deps.json
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\JrNBALeagueRo.runtimeconfig.json
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\JrNBALeagueRo.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\JrNBALeagueRo.pdb
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.csproj.AssemblyReference.cache
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.AssemblyInfoInputs.cache
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.AssemblyInfo.cs
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.csproj.CoreCompileInputs.cache
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\refint\JrNBALeagueRo.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.pdb
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.genruntimeconfig.cache
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\ref\JrNBALeagueRo.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.Form1.resources
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.csproj.GenerateResource.cache
