@@ -13,5 +13,8 @@ C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de p
 C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.pdb
 C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.genruntimeconfig.cache
 C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\ref\JrNBALeagueRo.dll
-C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.Form1.resources
 C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.csproj.GenerateResource.cache
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.csproj.CopyComplete
+C:\Users\Cosmin Popa\Desktop\cursuri si altele\anul 2\sem 1\Metode avansate de programare\Lab\JrNBALeagueRo\JrNBALeagueRo\obj\Debug\net6.0-windows\JrNBALeagueRo.AppGUI.resources

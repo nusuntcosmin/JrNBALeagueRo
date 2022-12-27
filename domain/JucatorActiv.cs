@@ -6,20 +6,17 @@ using System.Threading.Tasks;
 
 namespace JrNBALeagueRo.domain
 {
-    internal class JucatorActiv : Jucator
+    public class JucatorActiv : Jucator
     {
         private Guid idMeci;
         private int nrPuncteInscrise;
         private String tip;
-           
-
-        public JucatorActiv(Guid idMeci, int nrPuncteInscrise, string tip,Jucator jucator) : base(jucator.Echipa,jucator)
+        public JucatorActiv(Guid idMeci, int nrPuncteInscrise, String tip,Jucator jucator) : base(jucator.Echipa,jucator)
         {
             this.idMeci = idMeci;
             this.nrPuncteInscrise = nrPuncteInscrise;
             this.tip = tip;
-            base.ID = jucator.ID;
-            
+            base.ID = jucator.ID;  
         }
 
         public Guid getIdMeci

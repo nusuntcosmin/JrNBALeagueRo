@@ -1,3 +1,6 @@
+using JrNBALeagueRo.repository.database;
+using JrNBALeagueRo.repository.factory;
+using JrNBALeagueRo.service;
 namespace JrNBALeagueRo
 {
     internal static class Program
@@ -6,10 +9,16 @@ namespace JrNBALeagueRo
         [STAThread]
         static void Main()
         {
-            
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
-            
+            Service srv = new Service(RepositoryFactory.getRepoJucatori(),RepositoryFactory.getRepoJucatoriActivi(),
+                                      RepositoryFactory.getRepoMeciuri(),RepositoryFactory.getRepoEchipa(),RepositoryFactory.getRepoElevi());
+
+            //utils.Utils.addEchipe(ref srv);
+            //utils.Utils.addJucatori(ref srv);
+            //utils.Utils.addMeciuri(ref srv);
+            //utils.Utils.addJucatoriActivi(ref srv);
+            Application.Run(new AppGUI(ref srv));
+           
         }
     }
 }

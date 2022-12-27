@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "p7sQ1Pc0rD+T/OjPsvIxcvwigoQQ3/MgQI5zxZDkQfluMSQInaYsb9CAjdvCHWJg8WvByFkg+XwNvMuod72+yQ==",
+  "dgSpecHash": "N+Yml89Q9dUm5Nix0x46Lolz/lg9HHODP45QJVwAh69siRaT4PpqOh7vUHY3KZ93X6TfShf2t5MeKWYYkjAvMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Cosmin Popa\\Desktop\\cursuri si altele\\anul 2\\sem 1\\Metode avansate de programare\\Lab\\JrNBALeagueRo\\JrNBALeagueRo\\JrNBALeagueRo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Cosmin Popa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Cosmin Popa\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512",
+    "C:\\Users\\Cosmin Popa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

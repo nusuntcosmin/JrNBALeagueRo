@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JrNBALeagueRo.domain
 {
-    internal class Meci : Entity<Guid>
+    public  class Meci : Entity<Guid>
     {
         private Echipa echipaOaspete;
         private Echipa echipaGazda;

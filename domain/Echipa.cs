@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JrNBALeagueRo.domain
 {
-    internal class Echipa : Entity<Guid>
+    public class Echipa : Entity<Guid>
     {
         private String nume;
         
@@ -26,6 +26,17 @@ namespace JrNBALeagueRo.domain
         {
             base.ID = Guid.NewGuid();
             this.nume = nume;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Echipa echipa &&
+                   ID.Equals(echipa.ID);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ID);
         }
     }
 }

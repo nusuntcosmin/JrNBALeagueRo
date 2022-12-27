@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace JrNBALeagueRo.domain
 {
-    internal class Entity<T>
+    public class Entity<T> 
     {
         private T id;
         
@@ -21,5 +22,6 @@ namespace JrNBALeagueRo.domain
                 id = value; 
             }
         }
+
     }
 }

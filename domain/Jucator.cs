@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JrNBALeagueRo.domain
 {
-    internal class Jucator : Elev
+    public class Jucator : Elev
     {
 
         private Echipa echipa;
@@ -30,9 +30,6 @@ namespace JrNBALeagueRo.domain
             base.ID = elev.ID;
         }
 
-        public Jucator(Echipa echipa,String nume, String scoala) : base(nume,scoala)
-        {
-            this.echipa = echipa;
-        }
+
     }
 }
