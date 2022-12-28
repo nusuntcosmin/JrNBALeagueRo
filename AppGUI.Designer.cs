@@ -42,11 +42,9 @@
             this.btnShowEchipaGazda = new System.Windows.Forms.Button();
             this.btnShowEchipaOaspete = new System.Windows.Forms.Button();
             this.btnShowMeciScor = new System.Windows.Forms.Button();
-            this.labelNumeEchipaGazda = new System.Windows.Forms.Label();
-            this.labelNumeEchipaOaspete = new System.Windows.Forms.Label();
-            this.scorEchipaGazda = new System.Windows.Forms.Label();
-            this.scorEchipaOaspete = new System.Windows.Forms.Label();
             this.listaJucatoriActiviMeci = new System.Windows.Forms.ListView();
+            this.nume = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.displayJucatoriActiviMeci = new System.Windows.Forms.Label();
             this.comboBoxEchipe = new System.Windows.Forms.ComboBox();
             this.labelDisplayEchipe = new System.Windows.Forms.Label();
@@ -54,8 +52,10 @@
             this.NumeJucator = new System.Windows.Forms.ColumnHeader();
             this.Scoala = new System.Windows.Forms.ColumnHeader();
             this.labelDisplayJucatoriiEchipei = new System.Windows.Forms.Label();
-            this.nume = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.labelNumeEchipaGazda = new System.Windows.Forms.Label();
+            this.labelNumeEchipaOaspete = new System.Windows.Forms.Label();
+            this.scorEchipaGazda = new System.Windows.Forms.Label();
+            this.scorEchipaOaspete = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tabelMeciuri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,7 +166,7 @@
             // 
             // btnShowEchipaGazda
             // 
-            this.btnShowEchipaGazda.Location = new System.Drawing.Point(523, 54);
+            this.btnShowEchipaGazda.Location = new System.Drawing.Point(522, 14);
             this.btnShowEchipaGazda.Name = "btnShowEchipaGazda";
             this.btnShowEchipaGazda.Size = new System.Drawing.Size(268, 34);
             this.btnShowEchipaGazda.TabIndex = 7;
@@ -176,7 +176,7 @@
             // 
             // btnShowEchipaOaspete
             // 
-            this.btnShowEchipaOaspete.Location = new System.Drawing.Point(523, 94);
+            this.btnShowEchipaOaspete.Location = new System.Drawing.Point(522, 54);
             this.btnShowEchipaOaspete.Name = "btnShowEchipaOaspete";
             this.btnShowEchipaOaspete.Size = new System.Drawing.Size(267, 34);
             this.btnShowEchipaOaspete.TabIndex = 8;
@@ -187,45 +187,13 @@
             // btnShowMeciScor
             // 
             this.btnShowMeciScor.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnShowMeciScor.Location = new System.Drawing.Point(523, 134);
+            this.btnShowMeciScor.Location = new System.Drawing.Point(525, 94);
             this.btnShowMeciScor.Name = "btnShowMeciScor";
             this.btnShowMeciScor.Size = new System.Drawing.Size(268, 34);
             this.btnShowMeciScor.TabIndex = 9;
             this.btnShowMeciScor.Text = "Afiseaza scor meci selectat";
             this.btnShowMeciScor.UseVisualStyleBackColor = true;
             this.btnShowMeciScor.Click += new System.EventHandler(this.btnMeciScor_Click);
-            // 
-            // labelNumeEchipaGazda
-            // 
-            this.labelNumeEchipaGazda.AutoSize = true;
-            this.labelNumeEchipaGazda.Location = new System.Drawing.Point(550, 184);
-            this.labelNumeEchipaGazda.Name = "labelNumeEchipaGazda";
-            this.labelNumeEchipaGazda.Size = new System.Drawing.Size(0, 25);
-            this.labelNumeEchipaGazda.TabIndex = 10;
-            // 
-            // labelNumeEchipaOaspete
-            // 
-            this.labelNumeEchipaOaspete.AutoSize = true;
-            this.labelNumeEchipaOaspete.Location = new System.Drawing.Point(795, 184);
-            this.labelNumeEchipaOaspete.Name = "labelNumeEchipaOaspete";
-            this.labelNumeEchipaOaspete.Size = new System.Drawing.Size(0, 25);
-            this.labelNumeEchipaOaspete.TabIndex = 11;
-            // 
-            // scorEchipaGazda
-            // 
-            this.scorEchipaGazda.AutoSize = true;
-            this.scorEchipaGazda.Location = new System.Drawing.Point(553, 230);
-            this.scorEchipaGazda.Name = "scorEchipaGazda";
-            this.scorEchipaGazda.Size = new System.Drawing.Size(0, 25);
-            this.scorEchipaGazda.TabIndex = 12;
-            // 
-            // scorEchipaOaspete
-            // 
-            this.scorEchipaOaspete.AutoSize = true;
-            this.scorEchipaOaspete.Location = new System.Drawing.Point(799, 227);
-            this.scorEchipaOaspete.Name = "scorEchipaOaspete";
-            this.scorEchipaOaspete.Size = new System.Drawing.Size(0, 25);
-            this.scorEchipaOaspete.TabIndex = 13;
             // 
             // listaJucatoriActiviMeci
             // 
@@ -238,6 +206,16 @@
             this.listaJucatoriActiviMeci.TabIndex = 14;
             this.listaJucatoriActiviMeci.UseCompatibleStateImageBehavior = false;
             this.listaJucatoriActiviMeci.View = System.Windows.Forms.View.Details;
+            // 
+            // nume
+            // 
+            this.nume.Text = "Nume jucator";
+            this.nume.Width = 150;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "scoala";
+            this.columnHeader1.Width = 300;
             // 
             // displayJucatoriActiviMeci
             // 
@@ -328,31 +306,57 @@
             this.labelDisplayJucatoriiEchipei.TabIndex = 19;
             this.labelDisplayJucatoriiEchipei.Text = "Jucatorii echipei alese";
             // 
-            // nume
+            // labelNumeEchipaGazda
             // 
-            this.nume.Text = "Nume jucator";
-            this.nume.Width = 150;
+            this.labelNumeEchipaGazda.AutoSize = true;
+            this.labelNumeEchipaGazda.Location = new System.Drawing.Point(525, 140);
+            this.labelNumeEchipaGazda.Name = "labelNumeEchipaGazda";
+            this.labelNumeEchipaGazda.Size = new System.Drawing.Size(59, 25);
+            this.labelNumeEchipaGazda.TabIndex = 20;
+            this.labelNumeEchipaGazda.Text = "label1";
             // 
-            // columnHeader1
+            // labelNumeEchipaOaspete
             // 
-            this.columnHeader1.Text = "scoala";
-            this.columnHeader1.Width = 300;
+            this.labelNumeEchipaOaspete.AutoSize = true;
+            this.labelNumeEchipaOaspete.Location = new System.Drawing.Point(529, 217);
+            this.labelNumeEchipaOaspete.Name = "labelNumeEchipaOaspete";
+            this.labelNumeEchipaOaspete.Size = new System.Drawing.Size(59, 25);
+            this.labelNumeEchipaOaspete.TabIndex = 21;
+            this.labelNumeEchipaOaspete.Text = "label2";
+            // 
+            // scorEchipaGazda
+            // 
+            this.scorEchipaGazda.AutoSize = true;
+            this.scorEchipaGazda.Location = new System.Drawing.Point(525, 174);
+            this.scorEchipaGazda.Name = "scorEchipaGazda";
+            this.scorEchipaGazda.Size = new System.Drawing.Size(59, 25);
+            this.scorEchipaGazda.TabIndex = 22;
+            this.scorEchipaGazda.Text = "label3";
+            // 
+            // scorEchipaOaspete
+            // 
+            this.scorEchipaOaspete.AutoSize = true;
+            this.scorEchipaOaspete.Location = new System.Drawing.Point(529, 254);
+            this.scorEchipaOaspete.Name = "scorEchipaOaspete";
+            this.scorEchipaOaspete.Size = new System.Drawing.Size(59, 25);
+            this.scorEchipaOaspete.TabIndex = 23;
+            this.scorEchipaOaspete.Text = "label4";
             // 
             // AppGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 489);
+            this.Controls.Add(this.scorEchipaOaspete);
+            this.Controls.Add(this.scorEchipaGazda);
+            this.Controls.Add(this.labelNumeEchipaOaspete);
+            this.Controls.Add(this.labelNumeEchipaGazda);
             this.Controls.Add(this.labelDisplayJucatoriiEchipei);
             this.Controls.Add(this.listJucatoriEchipaAleasa);
             this.Controls.Add(this.labelDisplayEchipe);
             this.Controls.Add(this.comboBoxEchipe);
             this.Controls.Add(this.displayJucatoriActiviMeci);
             this.Controls.Add(this.listaJucatoriActiviMeci);
-            this.Controls.Add(this.scorEchipaOaspete);
-            this.Controls.Add(this.scorEchipaGazda);
-            this.Controls.Add(this.labelNumeEchipaOaspete);
-            this.Controls.Add(this.labelNumeEchipaGazda);
             this.Controls.Add(this.btnShowMeciScor);
             this.Controls.Add(this.btnShowEchipaOaspete);
             this.Controls.Add(this.btnShowEchipaGazda);
@@ -383,10 +387,10 @@
         private Button btnShowEchipaGazda;
         private Button btnShowEchipaOaspete;
         private Button btnShowMeciScor;
-        private Label labelNumeEchipaGazda;
-        private Label labelNumeEchipaOaspete;
-        private Label scorEchipaGazda;
-        private Label scorEchipaOaspete;
+        //private Label labelNumeEchipaGazda;
+        //private Label labelNumeEchipaOaspete;
+        //private Label scorEchipaGazda;
+        //private Label scorEchipaOaspete;
         private ListView listaJucatoriActiviMeci;
         private Label displayJucatoriActiviMeci;
         private ComboBox comboBoxEchipe;
@@ -401,5 +405,9 @@
         private DataGridViewTextBoxColumn guidMeci;
         private ColumnHeader nume;
         private ColumnHeader columnHeader1;
+        private Label labelNumeEchipaGazda;
+        private Label labelNumeEchipaOaspete;
+        private Label scorEchipaGazda;
+        private Label scorEchipaOaspete;
     }
 }

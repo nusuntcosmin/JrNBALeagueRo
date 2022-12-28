@@ -102,7 +102,12 @@ namespace JrNBALeagueRo.service
             return repoMeciuri.findAll();
         }
 
-        
+        public IEnumerable<JucatorActiv> getJucatoriActivi()
+        {
+            return repoJucatoriActivi.findAll();
+        }
+
+
         public void saveJucatorActiv(Meci meci, int nrPuncteInscrise,String tip, Jucator j)
         {
             if(!j.Echipa.ID.Equals(meci.GetEchipaOaspete.ID) && !j.Echipa.ID.Equals(meci.getEchipaGazda.ID))

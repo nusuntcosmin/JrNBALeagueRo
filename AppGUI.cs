@@ -27,13 +27,9 @@ namespace JrNBALeagueRo
             this.srv = service;
             InitializeComponent();
             reloadMeciDataGridView((List<Meci>)srv.getMeciuri());
-            
-            btnShowEchipaGazda.Visible = false;
-            btnShowEchipaOaspete.Visible = false;
-            btnShowMeciScor.Visible = false;
-            displayJucatoriActiviMeci.Visible = false;
-            listaJucatoriActiviMeci.Visible = false;
-            
+            setVisibilityForLabelsForScor(false);
+            setVisibilityForMeciRelatedWidgets(false);
+
         }
 
         private void tabelMeciuri_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -42,12 +38,9 @@ namespace JrNBALeagueRo
             {
                 DataGridViewRow row = tabelMeciuri.Rows[e.RowIndex];
                 guidMeciSelectat = Guid.Parse(row.Cells["guidMeci"].Value.ToString());
-
-                btnShowEchipaGazda.Visible = true;
-                btnShowEchipaOaspete.Visible = true;
-                btnShowMeciScor.Visible = true;
-                displayJucatoriActiviMeci.Visible = true;
-                listaJucatoriActiviMeci.Visible = true;
+                setVisibilityForMeciRelatedWidgets(true);
+                setVisibilityForLabelsForScor(false);
+                listaJucatoriActiviMeci.Items.Clear();
             }
         }
 
@@ -62,15 +55,19 @@ namespace JrNBALeagueRo
 
         private void btnShowEchipaGazda_Click(object sender, EventArgs e)
         {
-            List<Jucator> listaJucatori =srv.getJucatoriForEchipa(srv.findMeciById(guidMeciSelectat).getEchipaGazda.ID).ToList();
-            reloadJucatoriActiviLista(listaJucatori);
+            List<JucatorActiv> listaJucatoriActivi = (from jucatorActiv in srv.getJucatoriActivi()
+                                           where jucatorActiv.Echipa.ID.Equals(srv.findMeciById(guidMeciSelectat).getEchipaGazda.ID)
+                                           select jucatorActiv).ToList();
+            reloadJucatoriActiviLista(listaJucatoriActivi);
 
         }
 
         private void btnShowEchipaOaspete_Click(object sender, EventArgs e)
         {
-            List<Jucator> listaJucatori = srv.getJucatoriForEchipa(srv.findMeciById(guidMeciSelectat).GetEchipaOaspete.ID).ToList();
-            reloadJucatoriActiviLista(listaJucatori);
+            List<JucatorActiv> listaJucatoriActivi = (from jucatorActiv in srv.getJucatoriActivi()
+                                                      where jucatorActiv.Echipa.ID.Equals(srv.findMeciById(guidMeciSelectat).GetEchipaOaspete.ID)
+                                                      select jucatorActiv).ToList();
+            reloadJucatoriActiviLista(listaJucatoriActivi);
         }
 
         private void startDateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -83,9 +80,51 @@ namespace JrNBALeagueRo
             finalDateAleasa = finalDateTimePicker.Value;
         }
 
-        
+        private void setVisibilityForMeciRelatedWidgets(bool v)
+        {
+            btnShowEchipaGazda.Visible = v;
+            btnShowEchipaOaspete.Visible = v;
+            btnShowMeciScor.Visible = v;
+            displayJucatoriActiviMeci.Visible = v;
+            listaJucatoriActiviMeci.Visible = v;
+        }
+        private void setVisibilityForLabelsForScor(bool v)
+        {
+            labelNumeEchipaGazda.Visible = v;
+            labelNumeEchipaOaspete.Visible = v;
+            scorEchipaGazda.Visible = v;
+            scorEchipaOaspete.Visible = v;
+        }
         private void btnMeciScor_Click(object sender, EventArgs e)
         {
+            
+            Echipa echipaGazda = srv.findMeciById(guidMeciSelectat).getEchipaGazda;
+            Echipa echipaOaspete = srv.findMeciById(guidMeciSelectat).GetEchipaOaspete;
+
+            List<JucatorActiv> listaJucatoriActiviEchipaGazda = (from jucatorActiv in srv.getJucatoriActivi()
+                                                                 where jucatorActiv.Echipa.ID.Equals(echipaGazda.ID)
+                                                                 select jucatorActiv).ToList();
+
+            List<JucatorActiv> listaJucatoriActiviEchipaOaspete = (from jucatorActiv in srv.getJucatoriActivi()
+                                                                 where jucatorActiv.Echipa.ID.Equals(echipaOaspete.ID)
+                                                                 select jucatorActiv).ToList();
+            int puncteEchipaGazda = 0;
+            int puncteEchipaOaspete = 0;
+            foreach (JucatorActiv j in listaJucatoriActiviEchipaGazda)
+            {
+                puncteEchipaGazda += j.getNrPuncteInscrise;
+            }
+            foreach (JucatorActiv j in listaJucatoriActiviEchipaOaspete)
+            {
+                puncteEchipaOaspete += j.getNrPuncteInscrise;
+            }
+            setVisibilityForLabelsForScor(true);
+            labelNumeEchipaGazda.Text = echipaGazda.Nume;
+            labelNumeEchipaOaspete.Text = echipaOaspete.Nume;
+
+            scorEchipaGazda.Text = puncteEchipaGazda.ToString();
+            scorEchipaOaspete.Text = puncteEchipaOaspete.ToString();
+
 
         }
 
@@ -104,7 +143,7 @@ namespace JrNBALeagueRo
         }
 
 
-        private void reloadJucatoriActiviLista(List<Jucator> listaJucatori)
+        private void reloadJucatoriActiviLista(List<JucatorActiv> listaJucatori)
         {
             listaJucatoriActiviMeci.Items.Clear();
             foreach (Jucator jucator in listaJucatori)
@@ -125,16 +164,12 @@ namespace JrNBALeagueRo
             {
                 tabelMeciuri.Rows.Add(meci.getEchipaGazda.Nume, meci.GetEchipaOaspete.Nume, meci.getDataMeci.ToString(),meci.ID.ToString());
             }
-            btnShowEchipaGazda.Visible = false;
-            btnShowEchipaOaspete.Visible = false;
-            btnShowMeciScor.Visible = false;
-            displayJucatoriActiviMeci.Visible = false;
-            listaJucatoriActiviMeci.Visible = false; 
+
+            setVisibilityForMeciRelatedWidgets(false);
             guidMeciSelectat = Guid.Empty;
         }
         private void comboBoxEchipe_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             reloadJucatoriEchipaList(srv.findEchipaByName(comboBoxEchipe.Text));
         }
     }

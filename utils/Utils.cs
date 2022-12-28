@@ -13,47 +13,7 @@ namespace JrNBALeagueRo.utils
 {
     internal class Utils
     {
-        public static void addEchipe(ref service.Service srv)
-        {
-            string[] echipe =
-           {
-                "Atlanta Hawks",
-                "Boston Celtics",
-                "Brooklyn Nets",
-                "Charlotte Hornets",
-                "Chicago Bulls",
-                "Cleveland Cavaliers",
-                "Dallas Mavericks",
-                "Denver Nuggets",
-                "Detroit Pistons",
-                "Golden State Warriors",
-                "Houston Rockets",
-                "Indiana Pacers",
-                "Los Angeles Clippers",
-                "Los Angeles Lakers",
-                "Memphis Grizzlies",
-                "Miami Heat",
-                "Milwaukee Bucks",
-                "Minnesota Timberwolves",
-                "New Orleans Pelicans",
-                "New York Knicks",
-                "Oklahoma City Thunder",
-                "Orlando Magic",
-                "Philadelphia 76ers",
-                "Phoenix Suns",
-                "Portland Trail Blazers",
-                "Sacramento Kings",
-                "San Antonio Spurs",
-                "Toronto Raptors",
-                "Utah Jazz",
-                "Washington Wizards"
-           };
-
-            foreach (string echipa in echipe)
-            {
-                srv.saveEchipa(echipa);
-            }
-        }
+        
         public static bool existaEchipa(String numeEchipa)
         {
             string[] echipe =
@@ -96,6 +56,48 @@ namespace JrNBALeagueRo.utils
             }
 
             return false;
+        }
+        // adaugare date
+        public static void addEchipe(ref service.Service srv)
+        {
+            string[] echipe =
+           {
+                "Atlanta Hawks",
+                "Boston Celtics",
+                "Brooklyn Nets",
+                "Charlotte Hornets",
+                "Chicago Bulls",
+                "Cleveland Cavaliers",
+                "Dallas Mavericks",
+                "Denver Nuggets",
+                "Detroit Pistons",
+                "Golden State Warriors",
+                "Houston Rockets",
+                "Indiana Pacers",
+                "Los Angeles Clippers",
+                "Los Angeles Lakers",
+                "Memphis Grizzlies",
+                "Miami Heat",
+                "Milwaukee Bucks",
+                "Minnesota Timberwolves",
+                "New Orleans Pelicans",
+                "New York Knicks",
+                "Oklahoma City Thunder",
+                "Orlando Magic",
+                "Philadelphia 76ers",
+                "Phoenix Suns",
+                "Portland Trail Blazers",
+                "Sacramento Kings",
+                "San Antonio Spurs",
+                "Toronto Raptors",
+                "Utah Jazz",
+                "Washington Wizards"
+           };
+
+            foreach (string echipa in echipe)
+            {
+                srv.saveEchipa(echipa);
+            }
         }
         public static void addElevi(ref service.Service srv)
         {
@@ -203,8 +205,5 @@ namespace JrNBALeagueRo.utils
                 }
             }
         }
-
-
-
     }
 }
