@@ -1,4 +1,4 @@
-C# app to manage a middle school basketball league.
+C# app to manage a middle school basketball league. This project was not mandatory to pass the course.
 30 teams representing 30 schools. It's assumed that data (school names, teams, students and matches) is already registered, but I've also posted the code which does that part.
 Entities:
 -Elev ( student )
@@ -12,3 +12,4 @@ Functional features:
 4. Calculate and display the score for a chosen game.
 
 I've also created a GUI using Windows Forms even if this part was not mandatory for the uni project.
+Data was saved using PostgreSQL.
