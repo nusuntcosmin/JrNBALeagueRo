@@ -7,7 +7,7 @@ Entities:
 -Meci ( game )
 Functional features:
 1. Display all the players for a chosen team.
-2. Display all the players that played in a choosed game.
+2. Display all the players that played in a chosen game.
 3. Display all the games from a certain time period.
 4. Calculate and display the score for a chosen game.
 
