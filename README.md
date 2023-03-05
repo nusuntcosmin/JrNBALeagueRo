@@ -1,4 +1,5 @@
 C# app to manage a middle school basketball league. This project was not mandatory to pass the course.
+Concepts used : OOP, LINQ, Delegates, PostgreSQL, Service & Repository pattern.
 30 teams representing 30 schools. It's assumed that data (school names, teams, students and matches) is already registered, but I've also posted the code which does that part(hardcoded).
 
 Entities:
@@ -15,5 +16,5 @@ Functional features:
 
 I've also created a GUI using Windows Forms.
 Data was saved using PostgreSQL.
-Concepts used : Inheritance, Linq, Delegates, SQL, Foreign keys, Service Repository pattern.
+
 
